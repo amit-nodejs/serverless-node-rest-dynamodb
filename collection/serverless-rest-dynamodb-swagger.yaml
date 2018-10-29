@@ -1,0 +1,166 @@
+swagger: "2.0"
+info:
+  description: "Serverless - REST API."
+  version: "0.0.1"
+  title: "Serverless REST"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "amit.kumar@globant.com"
+host: "ktqsx66gc2.execute-api.us-east-1.amazonaws.com"
+basePath: "/dev"
+tags:
+- name: "user"
+  description: "Operations about user"
+  externalDocs:
+    description: "Find out more"
+    url: "http://swagger.io"
+schemes:
+- "https"
+- "http"
+paths:
+  /users:
+    post:
+      tags:
+      - "user"
+      summary: "Add a new user"
+      description: ""
+      operationId: "addUser"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "User's payload(object)"
+        required: true
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        200:
+          description: "Success"
+        400:
+          description: "Invalid Input"
+        500:
+          description: "Internal Server Error"
+          
+    get:
+      tags:
+      - "user"
+      summary: "Get list of Users"
+      description: ""
+      operationId: "ListUser"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: A list of users
+          schema:
+            type: array
+            items:
+              type: string
+              $ref: '#/definitions/UserGet'
+        404:
+          description: "User not found"
+        500:
+          description: "Internal Server Error"
+  
+  /users/{id}:
+    get:
+      tags:
+      - "user"
+      summary: "Find user by ID"
+      description: "Returns a single user"
+      operationId: "getUserById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "User id to fetch an User"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/UserGet"
+        404:
+          description: "User not found"
+          
+    put:
+      tags:
+      - "user"
+      summary: "Update an existing User"
+      description: ""
+      operationId: "updateUserById"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "User id to update an User"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Success"
+        400:
+          description: "Invalid Input"
+        404:
+          description: "User not found"
+        500:
+          description: "Internal Server Error"
+  
+    delete:
+      tags:
+      - "user"
+      summary: "Deletes an User"
+      description: ""
+      operationId: "deleteUserById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "User id to delete an User"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Success"
+        404:
+          description: "User not found"
+        500:
+          description: "Internal Server Error"
+  
+definitions:
+  User:
+    type: "object"
+    properties:
+      firstName:
+        type: "string"
+      lastName:
+        type: "string"
+      email:
+        type: "string"
+        example: sample@example.com
+  
+  UserGet:
+    type: "object"
+    properties:
+      id:
+       type: "string"
+       example: b34ff1ec-d7d7-41c5-8efa-39eea6665841
+      firstName:
+        type: "string"
+      lastName:
+        type: "string"
+      email:
+        type: "string"
+        example: sample@example.com
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

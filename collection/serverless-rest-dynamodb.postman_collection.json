@@ -1,0 +1,170 @@
+{
+	"id": "1d638561-ef4e-ed72-4f33-8e4a4824c154",
+	"name": "serverless-rest-dynamodb",
+	"description": "",
+	"order": [
+		"272de76e-5295-dff5-739b-54248dada959",
+		"f7bc6df9-f85b-17e7-f7a3-b99024b388ac",
+		"d52df2d4-5687-6fa2-3763-5983caa550b4",
+		"105ea994-517b-3cd5-9511-df08ad23c502",
+		"d34abda2-8692-3ff8-9628-da5416bcf971"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1536226878430,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "105ea994-517b-3cd5-9511-df08ad23c502",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://ktqsx66gc2.execute-api.us-east-1.amazonaws.com/dev/users/c83b5cbe-c992-43fb-8019-3e4ae28b0c85",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536227105227,
+			"name": "Users - UPDATE",
+			"description": "",
+			"collectionId": "1d638561-ef4e-ed72-4f33-8e4a4824c154",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstName\" : \"Amit\",\n\t\"lastName\" : \"Kumar Updated\",\n\t\"email\" : \"amit.kumar@globant.com\"\n}"
+		},
+		{
+			"id": "272de76e-5295-dff5-739b-54248dada959",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://ktqsx66gc2.execute-api.us-east-1.amazonaws.com/dev/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536227034045,
+			"name": "Users - CREATE",
+			"description": "",
+			"collectionId": "1d638561-ef4e-ed72-4f33-8e4a4824c154",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstName\" : \"Amit\",\n\t\"lastName\" : \"Kumar\",\n\t\"email\" : \"amit.kumar@globant.com\"\n}"
+		},
+		{
+			"id": "d34abda2-8692-3ff8-9628-da5416bcf971",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://ktqsx66gc2.execute-api.us-east-1.amazonaws.com/dev/users/c83b5cbe-c992-43fb-8019-3e4ae28b0c44",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "1d638561-ef4e-ed72-4f33-8e4a4824c154",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Users - DELETE",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1536227002524,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"firstName\" : \"Amit\",\n\t\"lastName\" : \"Kumar Updated\",\n\t\"email\" : \"amit.kumar@globant.com\"\n}"
+		},
+		{
+			"id": "d52df2d4-5687-6fa2-3763-5983caa550b4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://ktqsx66gc2.execute-api.us-east-1.amazonaws.com/dev/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536227079761,
+			"name": "Users - LIST",
+			"description": "",
+			"collectionId": "1d638561-ef4e-ed72-4f33-8e4a4824c154",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstName\" : \"Amit\",\n\t\"lastName\" : \"Kumar\",\n\t\"email\" : \"amit.kumar@globant.com\"\n}"
+		},
+		{
+			"id": "f7bc6df9-f85b-17e7-f7a3-b99024b388ac",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://ktqsx66gc2.execute-api.us-east-1.amazonaws.com/dev/users/c83b5cbe-c992-43fb-8019-3e4ae28b0c85",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536227066683,
+			"name": "Users - GET",
+			"description": "",
+			"collectionId": "1d638561-ef4e-ed72-4f33-8e4a4824c154",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstName\" : \"Amit\",\n\t\"lastName\" : \"Kumar\",\n\t\"email\" : \"amit.kumar@globant.com\"\n}"
+		}
+	]
+}
