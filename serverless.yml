@@ -13,7 +13,7 @@ provider:
 # stackName: custom-stack-name # Use a custom name for the CloudFormation stack
 # apiName: custom-api-name # Use a custom name for the API Gateway API
 plugins:
-# - serverless-dynamodb-local # Uncomment to enable dynomoDB local
+# - serverless-dynamodb-local # Uncomment to enable DynamoDB local
   - serverless-offline # serverless-offline needs to be last in the plugins list
 
 custom:
